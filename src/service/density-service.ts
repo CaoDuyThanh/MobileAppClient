@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, ResponseContentType } from '@angular/http';
 import { Observable } from 'rxjs';
-import { Config } from '../shared/index';
+import { Config } from '../shared/config';
 
 declare let dcodeIO: any;
 
@@ -16,7 +16,7 @@ export class DensityService {
 	GetDensity(bounds: any, streetType: string): Observable<any> {
 		if (!this.densityStreetsLightProtobuf) {
 			var protobuf: any = dcodeIO.ProtoBuf;
-			var builder: any = protobuf.loadProtoFile('/app/service/models/streets_light.proto');
+			var builder: any = protobuf.loadProtoFile('assets/models/streets_light.proto');
 			this.densityStreetsLightProtobuf = builder.build('DensityStreetsLight').DensityStreetsLight;
 		}
 
@@ -37,4 +37,3 @@ export class DensityService {
 				});
 	}
 }
-

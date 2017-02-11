@@ -9,12 +9,12 @@
 				transform: translateX(-50%) translateY(-50%);" src="/assets/img/loading.gif" width="400px" height="300px" />
 </div>
 
-<!-- <div [style.display]="isLoadMap ? '' : 'none'"> -->
+<div>
 	<!-- Draw map -->
-	<!-- <div id="main_map" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; right: 0px; bottom: 0px"></div>
+	<div id="main_map" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; right: 0px; bottom: 0px"></div>
 
 	<div class="row">		
-		<div class="col-xl-3" style="margin-left: 40px; margin-bottom: 10px;">
+		<div class="col-xl-12">
 			<div class="input-group" #searchdiv>
 				<span class="input-group-addon" id="basic-addon1">Search</span>
 				<typeahead id="search_cmp" class="form-control" style="margin: 0px; 
@@ -31,7 +31,7 @@
 			</div>
 		</div>
 
-		<div class="col-xl-3" style="margin-left: 40px; margin-bottom: 10px;">
+		<!-- <div class="col-xl-3" style="margin-left: 40px; margin-bottom: 10px;">
 			<div class="dropdown">
 				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCameras" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Select traffic pole
@@ -40,8 +40,8 @@
 					<a class="dropdown-item" *ngFor="let trafficPole of trafficPoles" (click)="SelectTrafficPole(trafficPole)">{{ trafficPole.Name }}</a>
 				</div>
 			</div>
-		</div>		
-	</div> -->
+		</div>		 -->
+	</div>
 
 	<!-- Show traffic pole Modal (start) -->
 <!-- 	<div id="ShowTrafficPoleBtn" data-toggle="modal" data-target="#ShowTrafficPole" style="display: none">
@@ -65,4 +65,4 @@
         </div>
     </div>                
  -->    <!-- Show traffic pole Modal (end) -->
-<!-- </div> -->
+</div>

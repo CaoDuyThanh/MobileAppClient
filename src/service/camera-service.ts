@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs';
-import { Config } from '../shared/index';
+import { Config } from '../shared/config';
 
 // IMPORT MODELS
 import { TrafficPole, Camera, LatLon } from './models/CameraModel';
